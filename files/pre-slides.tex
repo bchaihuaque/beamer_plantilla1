@@ -1,0 +1,23 @@
+	\begin{frame}
+	\titlepage 
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Contenido} 
+	\tableofcontents 
+\end{frame}
+\AtBeginSection[]
+{
+	\begin{frame}<beamer>{Contenido}
+		\tableofcontents[currentsection, currentsubsection]
+	\end{frame}
+}
+% Para mostrar el contenido fantasma para ver avance en el outline
+\AtBeginSubsection[]
+{
+	\begin{frame}<beamer>{Contenido}
+		\tableofcontents[currentsection, currentsubsection]
+	\end{frame}
+}
+\addtocounter{framenumber}{-1}% If you don't want them to affect the slide number

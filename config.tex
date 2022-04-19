@@ -1,0 +1,29 @@
+\usepackage[spanish, english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{xcolor} % change the template's color
+\usepackage[utf8]{inputenc} 
+\usepackage{booktabs} %% to make tables
+% see: https://nhigham.com/2019/11/19/better-latex-tables-with-booktabs/
+\usepackage{orcidlink} %% ver como se configura logo orcid: https://tex.stackexchange.com/questions/445563/ieeetran-how-to-include-orcid-in-tex-pdf-with-pdflatex
+\usepackage{amsmath} %% formulas matematicas
+\usepackage{empheq} %% colocar un box en formula
+\usepackage{ragged2e} %% para justificar el texto. Colocarlo en cada frame
+\newcommand{\orcid}[1]{\href{https://orcid.org/#1}{\textcolor[HTML]{A6CE39}{\aiOrcid}}}
+
+\definecolor{coolblack}{rgb}{0.0, 0.18, 0.39}
+\setbeamercolor{structure}{fg=coolblack}
+
+\institute[]{
+	%===========Logos en el medio================%
+	\vspace*{-0.35cm}
+	\includegraphics[width=1.2cm]{figures/consorcio.png}
+	\hspace*{0.45cm}~%
+	\includegraphics[width=4cm]{figures/pucp.png}
+	\vspace*{0.35cm}\\
+	\inst1{
+		Doctoral student - University Consortium, Peru \\
+	}
+	\inst2{
+		Lecturer, Department of Management Sciences - Pontifical Catholic University of Peru}
+	}

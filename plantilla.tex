@@ -1,0 +1,47 @@
+%--------------------------------------------%
+% Template Beamer for presentations in 		 %
+% doctoral courses							 %	
+% by bchaihuaque@pucp.pe		             %
+% Using Madrid Beamer Template				 %
+% version 1.0								 %
+% Updated at 18/04/2022						 %
+%--------------------------------------------%
+\documentclass[aspectratio=169]{beamer}
+
+%%%%%%%%%%%%%% Tema %%%%%%%%%%%%%%%%%%
+\mode<presentation>{
+	\usetheme{madrid}
+}
+\input{config.tex}
+%%%%%% Título y subtítulo %%%%%%%%%%%%
+\title{title}
+\subtitle{subtitle}
+
+%%%%%%% Autores %%%%%%%%%%%%%%%%%%%%%%
+\author{Bruno Chaihuaque\orcidlink{0000-0001-5982-8505}\inst1$^{,}$\inst2}
+
+\begin{document}
+	\input{files/pre-slides.tex}	
+	
+	%%%%%%% Slides %%%%%%%%%%
+	
+	\section{Introduction}
+	\input{files/introduccion.tex}
+	
+	\section{Theoretical Framework}
+	\input{files/marco-teorico.tex}
+	
+	\section{Research Methodology}
+	\input{files/research-methodology.tex}
+	
+	\section{Results}
+	
+	\input{files/results.tex}
+	
+	\section{Discussion}
+	\input{files/discussions.tex}
+	
+	\section{Conclusions and Recommendations}
+	\input{files/conclusions.tex}
+	
+\end{document}
